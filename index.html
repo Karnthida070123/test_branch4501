@@ -1,16 +1,117 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hello world</h1>
-    <h3># Karnthida Jadoungjai</h3>
-    <h3># Mint</h3>
-    <h3># Lannapoly chiang mai clloege</h3>
-    <h3># Age 20</h3>
-    <h3># I like cat and game</h3>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resume by Karnthida Jadoungjai</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      /* เพิ่มสีพื้นหลังให้กับทั้งหน้า */
+      body {
+        background-color: #FFFFFF; /* สีเทาอ่อน */
+      }
+
+      /* เพิ่มสีพื้นหลังให้บางส่วน เช่น Header */
+      header {
+        background-color: #FFCC33; /* สีฟ้า */
+        color: white; /* เปลี่ยนสีข้อความเป็นขาว */
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      /* เพิ่มการตั้งค่าเพิ่มเติมสำหรับ Modal */
+      .modal-content {
+        background-color: #ffffff; /* สีขาว */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container my-5">
+      <header class="text-center mb-4">
+        <h1>Karnthida Jadoungjai</h1>
+        <p class="text-muted">[Resume By Karnthida Jadoungjai]</p>
+        <!-- Button to trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#aboutModal">
+          Learn More About Me
+        </button>
+      </header>
+
+      <section class="mb-4">
+        <h2>About Me</h2>
+        <p>Crurently studying at lannapolytechnic College of Technology Chiang Mai.</p>
+        <p>Karnthida Jadoungjai IT.4501 No.14</p>
+        <p>Skill : Closing the balance and Using the figma program</p>
+        <p>Used to do college internship.</p>
+      </section>
+
+      <section class="mb-4">
+        <h2>Myself</h2>
+        <!-- Carousel -->
+        <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Project 1">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Project 1</h5>
+                <p>Description of Project 1.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Project 2">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Project 2</h5>
+                <p>Description of Project 2.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://scontent.fcnx3-1.fna.fbcdn.net/v/t39.30808-1/351484798_985781775927683_1612092628827697675_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=101&ccb=1-7&_nc_sid=0ecb9b&_nc_ohc=b6_8UlFuLVAQ7kNvgG0SjaQ&_nc_oc=AdjKYSbZ8vm6_JBG73yXUJP6p8GhPByVeTuwlkc_Cx8zubPUUIdyVV8B8DnZAclPnUg&_nc_zt=24&_nc_ht=scontent.fcnx3-1.fna&_nc_gid=ATW602H5UkzSNKfhCU2ugi_&oh=00_AYAdj1qZf73FNTkmOBMja5JDQ8pf4D88ld3GTOtnisn9GQ&oe=67694158" class="d-block w-100" alt="Project 3">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Project 3</h5>
+                <p>Description of Project 3.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="mb-4">
+        <h2>Contact</h2>
+        <ul class="list-unstyled">
+          <li><strong>Email:</strong> stu67319010100@lannapoly.ac.th</li>
+          <li><strong>Phone:</strong> +66 64 897 5711</li>
+          <li><strong>Facebook:</strong> <a href="https://www.facebook.com/grxen.tex" target="_blank">linkedin.com/in/karnthida</a></li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="aboutModalLabel">About Me</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>ชื่อ นางสาวกานต์ธิดา จ่าดวงใจ ชื่อเล่น มิ้น</p>
+            <p>ปัจจุบันศึกษาอยู่วิทยาลัยเทคโนโลยีสารสนเทศ ชั้นปวส.1 IT.4501</p>
+            <p>เกิดวัน พุธ ที่ 03 เดือน พฤศจิกายน ค.ศ.2004</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
 </html>
